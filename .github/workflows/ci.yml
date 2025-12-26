@@ -13,4 +13,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6 # OBS: v6 current as of Dec 2025
-      - uses: leanprover/lean-action@v1
+      - uses: leanprover/lean-action@v1 # OBS: v1 current as of Dec 2025
+
+      # REQ.CI.DEPENDENCIES
+      # WHY:
+      #   lake-manifest.json is generated and not committed.
+      #   CI must regenerate it deterministically.
+      - name: Lake update
+        run: lake update
+
+      # REQ.CI.BUILD
+      # WHY:
+      #   Proofs are the deliverable.
+      - name: Lake build
+        run: lake build
