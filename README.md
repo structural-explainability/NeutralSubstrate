@@ -1,8 +1,8 @@
 # Structural Explainability: Neutral Substrate
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Build Status](https://github.com/civic-interconnect/NeutralSubstrate/actions/workflows/ci.yml/badge.svg)
-[![Check Links](https://github.com/civic-interconnect/NeutralSubstrate/actions/workflows/links.yml/badge.svg)](https://github.com/civic-interconnect/NeutralSubstrate/actions/workflows/links.yml)
+![Build Status](https://github.com/structural-explainability/NeutralSubstrate/actions/workflows/ci.yml/badge.svg?branch=main)
+[![Check Links](https://github.com/structural-explainability/NeutralSubstrate/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/structural-explainability/NeutralSubstrate/actions/workflows/links.yml)
 
 > Lean 4 formalization of foundational constraints required for ontological substrates
 > intended to support accountability under persistent interpretive disagreement.
