@@ -22,7 +22,8 @@ optional = []
 artifacts = [
   "ANNOTATIONS.md",
   "CITATION.cff",
-  "README.md"
+  "README.md",
+  "SE_MANIFEST.toml"
 ]
 
 [scope]

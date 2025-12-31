@@ -2,11 +2,17 @@ import NeutralSubstrate.Conformance
 import NeutralSubstrate.Core
 import NeutralSubstrate.Spec
 
--- REQ.LIBRARY.ROOT:
---   Public library root for this package.
--- OBS:
---   Imports must appear before this comment (Lean requirement).
---   This file is intentionally thin: it only re-exports submodules.
+/-!
+REQ.PUBLIC.SURFACE:
+  Canonical public import surface for this package.
+  Do not add any declarations here.
+  Do not add empty namespaces.
 
-namespace StructuralExplainability.NeutralSubstrate
-end StructuralExplainability.NeutralSubstrate
+WHY:
+  Downstream projects should have exactly one stable import path for this repo.
+
+OBS:
+  - This module re-exports the intended public modules by importing them.
+  - It must not define placeholder namespaces.
+  - All exported declarations live in imported modules.
+-/

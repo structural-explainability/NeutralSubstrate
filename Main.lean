@@ -12,7 +12,5 @@ import NeutralSubstrate
 --   This file must remain trivial and stable.
 --   Any failure here indicates a broken proof or import graph.
 
-
-
 def main : IO Unit :=
-  IO.println "Structural Explainability: package verified."
+  IO.println "Success: package verified."
