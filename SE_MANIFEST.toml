@@ -1,0 +1,50 @@
+schema = "se-manifest-1"
+
+[repo]
+name   = "NeutralSubstrate"
+org    = "structural-explainability"
+kind   = "formalization"
+status = "reference"
+since  = "2025"
+summary = "Lean formalization of the ontological neutrality theorem for representational substrates."
+
+[layer]
+space = "SE"
+role  = "foundation"
+
+[depends]
+required = [
+  "structural-explainability/spec-se@v1"
+]
+optional = []
+
+[provides]
+artifacts = [
+  "ANNOTATIONS.md",
+  "CITATION.cff",
+  "README.md"
+]
+
+[scope]
+includes = [
+  "ontological neutrality theorem",
+  "extension stability under disagreement",
+  "formal definitions of neutrality",
+  "axioms bounding domain applicability"
+]
+excludes = [
+  "identity regime definitions",
+  "entity kinds",
+  "domain semantics",
+  "explanations or interpretive claims",
+  "causal or normative primitives",
+  "governance or enforcement logic"
+]
+
+[citation]
+cff = "CITATION.cff"
+preferred = "repo"
+bib_hint = "case2025-lean-ns"
+
+[traceability]
+identifier_map = "none"

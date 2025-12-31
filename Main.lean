@@ -1,3 +1,5 @@
+import NeutralSubstrate
+
 -- REQ.EXEC.MAIN:
 --   Main entry point for this package.
 --
@@ -10,7 +12,7 @@
 --   This file must remain trivial and stable.
 --   Any failure here indicates a broken proof or import graph.
 
-import StructuralExplainability
+
 
 def main : IO Unit :=
   IO.println "Structural Explainability: package verified."

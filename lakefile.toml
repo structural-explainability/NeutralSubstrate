@@ -12,7 +12,6 @@
 name = "NeutralSubstrate"
 
 # REQ.PROJECT.VERSION
-#   Semantic version.
 #   Increment only for externally visible logical changes.
 version = "0.1.0"
 
@@ -27,6 +26,7 @@ keywords = [
   "structural-explainability",
   "accountability",
   "ontological-neutrality",
+  "neutral-substrate",
   "formal-ontology",
   "formal-verification",
   "theorem-proving",
@@ -40,13 +40,13 @@ keywords = [
 # REQ.BUILD.DEFAULT_TARGETS
 #   Default build surface.
 #   MUST include the public library root.
-defaultTargets = ["StructuralExplainability"]
+defaultTargets = ["NeutralSubstrate"]
 
 # REQ.LIB.PUBLIC
 #   Public Lean library exported by this package.
 #   Downstream projects import this by name.
 [[lean_lib]]
-name = "StructuralExplainability"
+name = "NeutralSubstrate"
 
 # REQ.EXEC.VERIFICATION
 #   Minimal executable used to verify that the

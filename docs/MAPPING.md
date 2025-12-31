@@ -5,7 +5,10 @@ This document maps definitions and theorems from the paper to their Lean formali
 **Paper**: "The Ontological Neutrality Theorem:
 Why Neutral Ontological Substrates Must Be Pre-Causal and Pre-Normative" (Case, 2025)
 
-**Formalization**: `StructuralExplainability/NeutralSubstrate.lean`
+**Formalization**:
+
+- `NeutralSubstrate/NeutralSubstrate/*.lean`
+
 
 ## Domain Scope
 
@@ -59,8 +62,9 @@ Such positions do not contradict these results; they are outside the scope of th
 To verify the formalization (and optionally, run it):
 
 ```bash
+lake update
 lake build
-lake exe neutralsubstrate
+lake exe verify
 ```
 
 All theorems compile without `sorry`, confirming the proofs are complete.

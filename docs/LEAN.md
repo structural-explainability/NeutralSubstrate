@@ -126,9 +126,9 @@ Type backslash + shortcut, then space:
 
 | Command | Purpose |
 |---------|---------|
-| `lake build` | Compile the project. |
 | `lake clean` | Remove build artifacts. |
-| `lake exe <name>` | Run an executable. |
+| `lake build` | Compile the project. |
+| `lake exe verify` | Run verification executable. |
 
 ---
 
