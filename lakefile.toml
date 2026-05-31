@@ -1,14 +1,13 @@
-# REQ.FILE.PROJECT.IDENTITY
-#   Declares the externally visible identity and build surface of this package.
-#   Sections marked CUSTOM are expected to vary by repository.
+# ============================================================
+# lakefile.toml
+# ============================================================
+# Declares the public Lean package identity, import surface,
+# build targets, dependencies, and verification executables.
 
 # ============================================================
-# REQUIRED PROJECT IDENTITY (stable structure, custom values)
+# PROJECT IDENTITY
 # ============================================================
 
-# REQ.PROJECT.NAME
-#   Canonical package name.
-#   CUSTOM: Must match repository naming.
 name = "NeutralSubstrate"
 
 # REQ.PROJECT.VERSION
@@ -35,24 +34,26 @@ keywords = [
 ]
 
 # ============================================================
-# REQUIRED BUILD SURFACE (invariant across repos)
+# BUILD SURFACE
 # ============================================================
+# defaultTargets must include the public Lean library root.
 
-# REQ.BUILD.DEFAULT_TARGETS
-#   Default build surface.
-#   MUST include the public library root.
 defaultTargets = ["NeutralSubstrate"]
 
-# REQ.LIB.PUBLIC
-#   Public Lean library exported by this package.
-#   Downstream projects import this by name.
+# ============================================================
+# PUBLIC LIBRARY
+# ============================================================
+# Downstream Lean projects import this library root.
+# Lake discovers modules under the matching source directory.
+
 [[lean_lib]]
 name = "NeutralSubstrate"
 
-# REQ.EXEC.VERIFICATION
-#   Minimal executable used to verify that the
-#   formalization compiles end-to-end under CI and local builds.
-#   Executable MUST remain trivial.
+# ============================================================
+# EXECUTABLES
+# ============================================================
+# Export executables generate machine-readable contract artifacts.
+
 [[lean_exe]]
 name = "verify"
 root = "Main"

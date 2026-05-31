@@ -9,14 +9,16 @@ Why Neutral Ontological Substrates Must Be Pre-Causal and Pre-Normative" (Case, 
 
 - `NeutralSubstrate/NeutralSubstrate/*.lean`
 
-
 ## Domain Scope
 
 This formalization applies to ontological substrates optimized for:
 
-- **Stability under disagreement**: The substrate must remain unchanged when extended by incompatible interpretive frameworks
-- **Persistent interpretive pluralism**: Legal, political, and analytic disagreement is treated as durable, not resolvable
-- **Accountability across jurisdictions**: Entities must remain referable across frameworks that disagree about causation, obligation, or evaluation
+- **Stability under disagreement**: The substrate must remain unchanged
+  when extended by incompatible interpretive frameworks
+- **Persistent interpretive pluralism**: Legal, political, and analytic disagreement
+  is treated as durable, not resolvable
+- **Accountability across jurisdictions**: Entities must remain referable across
+  frameworks that disagree about causation, obligation, or evaluation
 
 The results do **not** apply to substrates optimized for:
 
@@ -61,16 +63,25 @@ Such positions do not contradict these results; they are outside the scope of th
 
 To verify the formalization (and optionally, run it):
 
-```bash
+```shell
 lake update
 lake build
 lake exe verify
+```
+
+Optional md lint
+
+```shell
+npx markdownlint-cli2 --fix
 ```
 
 All theorems compile without `sorry`, confirming the proofs are complete.
 
 ## Notes
 
-- The formalization uses `List Primitive` for computability; the paper uses set notation (equivalent for finite collections).
-- `Admissible` is defined as `True` (all consistent frameworks are admissible); a richer model could add domain-specific constraints
-- Helper theorems (`any_true_implies_exists`, `any_false_implies_none`) are technical machinery not in the paper
+- The formalization uses `List Primitive` for computability;
+  the paper uses set notation (equivalent for finite collections).
+- `Admissible` is defined as `True` (all consistent frameworks are admissible);
+  a richer model could add domain-specific constraints
+- Helper theorems (`any_true_implies_exists`, `any_false_implies_none`)
+  are technical machinery not in the paper
