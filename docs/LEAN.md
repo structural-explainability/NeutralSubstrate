@@ -83,12 +83,12 @@ Tactics are commands used inside `by` blocks to construct proofs.
 
 ## Latin/Logic Terms
 
-| Term      | Origin                      | Meaning                                            |
-| --------- | --------------------------- | -------------------------------------------------- |
-| `exfalso` | Latin: "ex falso quodlibet" | From falsehood, anything follows.                  |
-| `rfl`     | "reflexivity"               | Something equals itself.                           |
-| `mp`      | "modus ponens"              | Forward direction of iff (`P ↔ Q` gives `P → Q`).  |
-| `mpr`     | "modus ponens reverse"      | Backward direction of iff (`P ↔ Q` gives `Q → P`). |
+| Term      | Origin                 | Meaning                                            |
+| --------- | ---------------------- | -------------------------------------------------- |
+| `exfalso` | Latin: "ex quodlibet"  | From falsehood, anything follows.                  |
+| `rfl`     | "reflexivity"          | Something equals itself.                           |
+| `mp`      | "modus ponens"         | Forward direction of iff (`P ↔ Q` gives `P → Q`).  |
+| `mpr`     | "modus ponens reverse" | Backward direction of iff (`P ↔ Q` gives `Q → P`). |
 
 ---
 
