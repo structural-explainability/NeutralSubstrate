@@ -1,3 +1,5 @@
+-- Archived.
+-- Retired and no longer authoritative. See repository README.md.
 import NeutralSubstrate.Conformance
 import NeutralSubstrate.Core
 import NeutralSubstrate.Spec
